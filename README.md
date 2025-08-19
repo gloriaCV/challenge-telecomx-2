@@ -15,15 +15,14 @@ TelecomX_Parte2/
 ├── datos_tratados.csv         # Dataset preprocesado utilizado en el notebook
 ├── imagenes/                  # Carpeta con visualizaciones generadas
 │ ├── barplots_variables_categoricas.png
-│ ├── curva_precall_comparacion_final.png
-│ ├── curva_roc_comparacion_final.png
 │ ├── grafico_curva_precall_rf.png
 │ ├── grafico_curva_precall_rl.png
+│ ├── grafico_curva_roc_rf.png
+│ ├── grafico_curva_roc_rl.png
 │ ├── grafico_donut_abandono.png
 │ ├── histogramas_variables_numericas.png
 │ ├── mapa_calor_correlacion_1.png
 │ ├── mapa_calor_correlacion_2.png
-│ ├── matriz_confusion_comparacion_final.png
 │ ├── matriz_confusion_NearMiss_rf.png
 │ ├── matriz_confusion_Original_rf.png
 │ ├── matriz_confusion_Original_rl.png

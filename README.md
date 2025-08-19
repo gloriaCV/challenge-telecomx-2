@@ -192,8 +192,8 @@ Para visualizar y ejecutar el análisis, sigue estos pasos:
 
 ### 1. Clonar el repositorio
 ```bash
-git clone https://github.com/gloriaCV/challenge-telecomx-1.git
-cd challenge-telecomx-1
+git clone https://github.com/gloriaCV/challenge-telecomx-2.git
+cd challenge-telecomx-2
 ```
 
 ### 2. Abrir el archivo principal
@@ -204,7 +204,7 @@ Puedes abrir el archivo `telecomx_2.ipynb` de dos formas:
 - Selecciona **Archivo > Abrir cuaderno > GitHub**.
 - Pega la URL del repositorio:  
 ```
-https://github.com/gloriaCV/challenge-telecomx-1
+https://github.com/gloriaCV/challenge-telecomx-2
 ```
 - Abre `telecomx_2.ipynb` y ejecuta las celdas.
 

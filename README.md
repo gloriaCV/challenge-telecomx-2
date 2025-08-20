@@ -15,6 +15,9 @@ TelecomX_Parte2/
 ├── datos_tratados.csv         # Dataset preprocesado utilizado en el notebook
 ├── imagenes/                  # Carpeta con visualizaciones generadas
 │ ├── barplots_variables_categoricas.png
+│ ├── comparacion_final_cprecall.png
+│ ├── comparacion_final_croc.png
+│ ├── comparacion_final_mconfusion.png
 │ ├── grafico_curva_precall_rf.png
 │ ├── grafico_curva_precall_rl.png
 │ ├── grafico_curva_roc_rf.png
@@ -226,10 +229,43 @@ jupyter notebook
 - **Modelos entrenados**: Regresión Logística y Random Forest.  
 - **Mejor desempeño**: Random Forest, gracias a su capacidad para capturar relaciones no lineales.  
 - **Variables más influyentes**:
-  1. Antigüedad del cliente.  
-  2. Tipo de contrato.  
-  3. Facturación mensual.  
-  4. Servicios adicionales.
+  1. Antigüedad del cliente  
+  2. Tipo de contrato  
+  3. Facturación mensual  
+  4. Servicios adicionales
+
+### 📈 Comparación de Modelos (con NearMiss)
+
+#### Matrices de Confusión
+Visualización lado a lado para ambos modelos, mostrando cómo se comportan en predicción de abandono:
+
+<img width="2934" height="1166" alt="comparacion_final_mconfusion" src="https://github.com/user-attachments/assets/e4fd0b22-6fc1-43b2-8a9d-516050514684" />
+
+
+#### Curva ROC
+Comparación de la capacidad de ambos modelos para discriminar entre clientes que abandonan y los que no:
+
+<img width="1391" height="1407" alt="comparacion_final_croc" src="https://github.com/user-attachments/assets/c6b69874-b50c-43de-b664-451c3abc30f3" />
+
+
+#### Curva Precision-Recall
+Comparación de la precisión vs. recall de ambos modelos, útil para priorizar detección de abandonos:
+
+<img width="1391" height="1407" alt="comparacion_final_cprecall" src="https://github.com/user-attachments/assets/31571f8f-6233-48a6-a811-5704315b98bb" />
+
+
+#### Métricas Resumidas
+| Métrica     | Regresión Logística | Random Forest |
+|------------|-------------------|---------------|
+| Accuracy   | 0.616             | 0.646         |
+| Precision  | 0.393             | 0.417         |
+| Recall     | 0.820             | 0.774         |
+| F1 Score   | 0.531             | 0.540         |
+| ROC-AUC    | 0.744             | 0.762         |
+
+#### Modelo con mejor Recall
+El modelo que tiene mejor Recall es: **Regresión Logística con NearMiss**
+
 
  ---
 
